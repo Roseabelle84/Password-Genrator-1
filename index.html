@@ -1,44 +1,38 @@
-<!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
-    <title>
-        <link rel="stylesheet" href="stylescss/stylesheet.css">
-        Generate a Random Password
-        using JavaScript
-    </title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body style="text-align:center;">
-    <element class="btn">
-        <h1 style="color: blue">
-            Password Generator
-        </h1>
-        <class=card />
+<body>
+    </p>
+    <div class="wrapper">
+        <header>
+            <h1>Password Generator</h1>
+        </header>
+        <div class="card">
+            <div class="card-header">
+                <h2>Generate a Password</h2>
+            </div>
+            <div class="card-body">
+            </div>
+            <div class="card-footer">
+                <table>
+                    <th>
+                        <button onclick="getpasswordfunction()" function genPassword()">EnterPassword</button>
 
-        <h3>
-            Click on the button to
-            generate random password.
-        </h3>
+                    </th>
 
-        <button onclick="gfg_Run()">ori
-            Click Here
-        </button>
+                </table>
 
-        <p id="ros"></p>
-        <p> Site geeks </p>
-        <script>
-            var el_down = document.getElementById("ros");
-
-
-            function gfg_Run() {
-                el_down.innerHTML =
-                    Math.random().toString(36).slice(2) +
-                    Math.random().toString(36)
-                        .toUpperCase().slice(2);
-            }
-        </script>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
